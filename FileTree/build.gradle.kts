@@ -1,6 +1,12 @@
+
+group = "com.github.RohitKushvaha01"
+version = "1.0.0"
+
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    `maven-publish`
 }
 
 android {
@@ -31,6 +37,22 @@ android {
         jvmTarget = "1.8"
     }
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            // Use the correct component for Android libraries (usually "release" or "debug")
+            from(components.findByName("release"))
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://jitpack.io")
+        }
+    }
+}
+
+
 
 dependencies {
 
