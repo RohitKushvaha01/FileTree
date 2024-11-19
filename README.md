@@ -4,6 +4,13 @@ Lightweight and fast file tree for Android
 
 [![](https://jitpack.io/v/RohitKushvaha01/FileTree.svg)](https://jitpack.io/#RohitKushvaha01/FileTree)
 
+
+## Depricated
+
+This FileTree is no longer maintained in favour of 
+https://github.com/dingyi222666/TreeView
+
+
 ## Overview
 
 `FileTree` is a custom Android view that extends `RecyclerView` to display a hierarchical file structure. This library provides a flexible and visually appealing way to present file trees in your Android applications.
